@@ -7,7 +7,7 @@ export default function BlogCard({ post }: { post: Post }) {
   return (
     <Link
       href={`/blogs/${post.id}`}
-      className="block group transform hover:-translate-y-1 transition-transform duration-300"
+      className="block group transform hover:-translate-y-1 transition-transform duration-300 px-4 md:px-0"
     >
       <div className="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
         {post.thumbnail ? (

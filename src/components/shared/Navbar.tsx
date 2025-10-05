@@ -259,7 +259,7 @@ import Link from "next/link";
 const navigationLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { href: "/blog", label: "Blog" },
+  { href: "/blogs", label: "Blogs" },
   { href: "/project", label: "Project" },
   { href: "/contact", label: "Contact" },
 ];
