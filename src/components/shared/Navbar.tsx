@@ -17,15 +17,15 @@
 // // Navigation links array to be used in both desktop and mobile menus
 // const navigationLinks = [
 //   { href: "/", label: "Home", active: true },
-//   { href: "#", label: "Features" },
-//   { href: "#", label: "Pricing" },
 //   { href: "/about", label: "About" },
+//   { href: "/blog", label: "Blog" },
+//   { href: "/project", label: "Proje" },
 // ];
 
 // export default function Navbar() {
 //   return (
-//     <header className="border-b px-4 md:px-6 max-w-screen-xl mx-auto">
-//       <div className="flex h-16 justify-between gap-4">
+//     <header className="fixed top-6 inset-x-4 h-16 max-w-screen-xl mx-auto  bg-background border dark:border-slate-700/70 z-30">
+//       <div className="flex h-16 justify-between gap-4 max-w-screen-xl mx-auto">
 //         {/* Left side */}
 //         <div className="flex gap-2">
 //           <div className="flex items-center md:hidden">
@@ -82,9 +82,8 @@
 //           {/* Main nav */}
 //           <div className="flex items-center gap-6">
 //             <Link href="/">
-//               <Logo></Logo>
+//               <Logo />
 //             </Link>
-//             {/* Navigation menu */}
 //             <NavigationMenu className="h-full *:h-full max-md:hidden">
 //               <NavigationMenuList className="h-full gap-2">
 //                 {navigationLinks.map((link, index) => (
@@ -104,7 +103,7 @@
 //         </div>
 //         {/* Right side */}
 //         <div className="flex items-center gap-2">
-//           <ModeToggle></ModeToggle>
+//           <ModeToggle />
 //           <Button asChild variant="ghost" size="sm" className="text-sm">
 //             <a href="#">Sign In</a>
 //           </Button>
@@ -144,7 +143,10 @@ const navigationLinks = [
 
 export default function Navbar() {
   return (
-    <header className="border-b px-4 md:px-6 max-w-screen-xl mx-auto">
+    <header
+      className="fixed top-6 inset-x-4 h-16 max-w-screen-xl mx-auto  
+     border-b dark:border-slate-700/70 z-30"
+    >
       <div className="flex h-16 justify-between gap-4">
         {/* Left side */}
         <div className="flex gap-2">
